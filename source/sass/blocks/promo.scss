@@ -1,10 +1,16 @@
 .promo {
-  background-image: url("../img/back-mobile.jpg");
-  background-size: 100% auto;
+  background-image: url("../img/back-desktop.jpg");
+  background-size: cover;
+  background-position: top;
   background-repeat: no-repeat;
   position: relative;
+  background-color: $input;
 
-  // &::after {
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-desktop@2x.jpg");
+  }
+
+  //   &::after {
   //   position: absolute;
   //   content: "";
   //   left: 0;
@@ -19,4 +25,14 @@
   display: block;
   padding: 90px 19px 85px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 78px;
+    padding-bottom: 90px;
+  }
 }

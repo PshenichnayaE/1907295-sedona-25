@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/32.ico">
   </head>
   <body class="page__body">
     <div class="container">
@@ -40,7 +41,11 @@
         <section class="promo-catalog">
           <div class="promo-catalog__wrapper">
             <h1 class="visually-hidden">Sedona.</h1>
-            <img class="promo-catalog__style" src="img/sedona.svg" width="229" height="39" alt="Логотип Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/sedona.svg" width="460" height="80">
+              <source media="(min-width: 768px)" srcset="img/sedona.svg" width="457" height="78">
+              <img class="promo-catalog__style" src="img/sedona.svg" width="229" height="39" alt="Логотип Седона">
+            </picture>
           </div>
         </section>
         <section class="promo-text promo-text--form">
